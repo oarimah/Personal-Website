@@ -1,0 +1,210 @@
+* {
+    margin: 0 auto;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+}
+
+html {
+    height: 100%;
+}
+
+a, a:hover, a:focus, a:active {
+    text-decoration: none;
+    color: white;
+}
+
+body {
+    height: 100%;
+}
+
+.container {
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.row {
+    text-align: center;
+    margin: 0 auto;
+    height: 100%;
+    background: url('../images/bball.JPG') no-repeat;
+    display: flex;
+    align-items: center;
+}
+
+.sideBar {
+    height: 70%;
+}
+
+.ositaDP {
+    height: 250px;
+    width: 250px;
+    border-radius: 100%;
+    background: url("../images/profile_pic.JPG") center/cover no-repeat;
+    /* cursor: pointer; */
+}
+
+.dpBox {
+    padding-bottom: 5%;
+}
+
+.social > a {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.intro > .line {
+    width: 40%;
+    height: 10px;
+    border-top: 1px solid #0000001f;
+}
+
+.intro h4 {
+    padding: 20px 10px;
+}
+
+.intro > p {
+    margin-top: 5%;
+    font-size: 15px;
+}
+
+.social img {
+    height: 8%;
+    width: 8%;
+}
+
+.tools {
+    padding-top: 10px;
+    height: 0;
+    overflow: hidden;
+    transition: height 0.3s ease;
+}
+
+.tool {
+    display: inline-block;
+    border: 1px solid #dee1e3;
+    margin-right: 10px;
+    padding: 8px;
+    border-radius: 5px;
+    font-size: 12px;
+}
+
+.projects {
+    position: relative;
+    background: black;
+    overflow: hidden;
+    height: 500px;
+}
+
+.projects:hover .tools {
+    animation: grow 0.3s ease forwards;
+}
+
+.description {
+    position: absolute;
+    bottom: 0;
+    padding: 15px;
+}
+
+.description:hover .project1, .description:hover .project2, .description:hover .project3, .description:hover .project4, .description:hover .project5, .description:hover .project6 {
+    transform: scale(1.05);
+}
+
+.project1, .project2, .project3, .project4, .project5, .project6 {
+    height: 100%;
+    transition: all .3s ease;
+    opacity: 0.6;
+}
+
+.project1:hover, .project2:hover, .project3:hover, .project4:hover, .project5:hover, .project6:hover {
+    transform: scale(1.05);
+    opacity: 0.8;
+}
+
+.project1 {
+    background: url('../images/bball.JPG')  center/cover no-repeat;
+}
+
+.project2 {
+    background: url('../images/hangman.png') center/cover no-repeat;
+}
+
+.project3 {
+    background: url('../images/snake.jpg') center/cover no-repeat;
+}
+
+.project4 {
+    background: url('../images/guessing.jpg') center/cover no-repeat;
+}
+
+.project5 {
+    background: url('../images/dice.jpg') center/cover no-repeat;
+}
+
+.project6 {
+    background: url('../images/Travel.JPG') center/cover no-repeat;
+}
+
+@keyframes grow {
+    from {
+        height: 0;
+        opacity: 0;
+    }
+    to {
+        height: 50px;
+        opacity: 1;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .row {
+        width: 45%;
+        float: left;
+        background: url('../images/white.jpg') no-repeat;
+    }
+    .ositaDP {
+        height: 180px;
+        width: 180px;
+    }
+
+    .projectContainer {
+        overflow: scroll;
+        height: 100%;
+    }
+
+    .projects {
+        height: 45%;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .row {
+        width: 30%;
+    }
+
+    .ositaDP {
+        height: 150px;
+        width: 150px;
+    }
+
+    .projects {
+        width: 50%;
+        float: left;
+    }
+}
+
+@media only screen and (min-width: 1150px) {
+    .row {
+        width: 25%;
+    }
+    .ositaDP {
+        height: 180px;
+        width: 180px;
+    }
+
+    .projects {
+        width: 33.33%;
+        height: 50%;
+    }
+}

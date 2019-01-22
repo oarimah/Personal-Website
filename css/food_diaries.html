@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>3D Travel Map</title>
+    <link rel="shortcut icon" href="images/traveldp.JPG" type="image/png">
+    <link rel="stylesheet" type="text/css" href="../css/css/food_diaries.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+</head>
+<body>
+<div id="chart">
+</div>
+<div id="intro">
+    <img class="dp" src="images/traveldp.JPG" onclick="popup('Hello there I\'m Osita! Throughout the course of my life, I\'ve travelled to 18 countries & I have lived in 6 of them. Click on the coloured countries to zoom in and learn more. Take a look around and I hope you enjoy travelling as much as I do!')" alt=profile""/>
+    <div class="textbox visible">
+        <p id="type">Click Me!</p>
+        <div class="queries">
+            <p class="question1" onclick="popup('My next trip is unplanned yet, however, I wish to travel to Hawaii next!')">Next Update?</p>
+            <p class="exit" onclick="exit()">Hide</p>
+        </div>
+    </div>
+</div>
+<div class="site"><h2 class="title">Osita's Travel History</h2><a class="site" href="index.html">index.html</a></div>
+<div class="back" onclick="back()">Retreat</div>
+<script src="../js/js/d3.min.js"></script>
+<script src="../js/js/food_diaries.js"></script>
+</body>
+</html>
